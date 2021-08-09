@@ -1,13 +1,13 @@
 <template>
   <div>
     <nav>
-      <h1>Leeblog</h1>
+      <h3>心彤蛋黃酥</h3>
       <label for="switch"
-        ><div>
-          <b-icon
-            icon="list"
-            style="width: 45px; height: 45px"
-          ></b-icon></div></label
+        ><div style="width: 20px; height: 0px">
+          <i
+            class="el-icon-menu"
+            style="font-size: 25px; opacity: 0.6"
+          ></i></div></label
       ><!--漢堡按鈕圖示-->
       <input type="checkbox" id="switch" /><!--選單開關-->
       <ul class="menu">
@@ -15,36 +15,27 @@
         <router-link to="/home" tag="li" active-class="myactive"
           >首頁</router-link
         >
-        <router-link to="/experience" tag="li" active-class="myactive"
-          >個人經歷</router-link
-        >
+
         <el-dropdown trigger="click">
-          <li class="el-dropdown-link">學習紀錄</li>
+          <li class="el-dropdown-link">商品專區</li>
 
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>
               <router-link to="/article" tag="li" active-class="myactive"
-                >文章分享</router-link
+                >蛋黃酥</router-link
               ></el-dropdown-item
             >
 
             <el-dropdown-item>
               <router-link to="/resource" tag="li" active-class="myactive"
-                >學習資源</router-link
-              ></el-dropdown-item
-            >
-            <el-dropdown-item
-              ><router-link to="/learn" tag="li" active-class="myactive"
-                >學習歷程</router-link
+                >菊花酥</router-link
               ></el-dropdown-item
             >
           </el-dropdown-menu>
         </el-dropdown>
-        <router-link to="/project" tag="li" active-class="myactive"
-          >作品集</router-link
-        >
+
         <router-link to="/contact" tag="li" active-class="myactive"
-          >聯絡資訊</router-link
+          >會員中心</router-link
         >
       </ul>
     </nav>
@@ -85,15 +76,15 @@ nav {
     display: block;
     clear: both;
   }
-  h1 {
+  h3 {
     /* Logo */
     color: rgb(0, 0, 0);
     float: left;
-    font-size: 32px;
+    opacity: 0.6;
     font-weight: bold;
-    padding-top: 5px;
+
     padding-left: 15px;
-    line-height: 60px;
+    line-height: 25px;
   }
 }
 .el-dropdown-link {
@@ -123,7 +114,7 @@ label {
   background: rgba（0，0，0，0）;
   li {
     text-align: center;
-
+    opacity: 0.6;
     display: block;
     padding: 10px 0;
     font-size: 18px;

@@ -16,5 +16,9 @@ export default {
   components: { Navbar },
 };
 </script>
-<style>
+<style scoped>
+html body {
+  margin: 0px;
+  padding: 0px;
+}
 </style>
